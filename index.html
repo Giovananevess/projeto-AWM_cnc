@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWM CNC</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img id="nav_logo" src="public/assets/images/WM-02.png" alt="Logotipo da AWM CNC"></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">INÍCIO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="aboutus.html">SOBRE NÓS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="galerry.html">GALERIA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="questions.html">PERGUNTAS</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"
+                onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                Fale Conosco
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="aboutus.html">Sobre Nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="galerry.html">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="questions.html">Perguntas</a>
+                </li>
+
+                <button class="btn-default"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Fale Conosco
+                </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="cta-title">
+                    Tábuas Sofisticadas
+                </h1>
+
+                <h2 class="cta-description">
+                    Transforme seus momentos de churrasco em experiências únicas com nossas tábuas de alta qualidade,
+                    personalizadas exclusivamente para você. Descubra nossas coleções e crie a tábua perfeita para suas
+                    necessidades.
+                </h2>
+
+                <div id="cta_buttons">
+                    <a href="tel:+5511950697643" id="phone_button">
+                        <i class="fa-solid fa-phone"></i>
+                        (14) 99836-4625
+                    </a>
+
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/cnc.wm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <div class="texts">
+                <h3 class="title">
+                    Vá além da sua imaginação
+                </h3>
+
+                <p class="description">
+                    Transforme os seus espaços com a elegância e autenticidade das nossas pedras 100% naturais e crie
+                    ambientes que são verdadeiras obras de arte.
+                </p>
+            </div>
+            </div>
+        </section>
+
+        <section id="transform">
+            <img src="public/assets/images/petisqueira.jfif" alt="Parede de Pedra e escada">
+
+            <div class="texts">
+                <h3 class="title">
+                    A AWM CNC nasceu da paixão por churrascos e da arte da marcenaria.
+                </h3>
+
+                <p class="description">
+                    Missão: Entregar produtos únicos e de qualidade, criando experiências memoráveis para nossos
+                    clientes.
+                    Visão: Ser a referência em tábuas de churrasco personalizadas no mercado.
+                    Valores: Qualidade, Personalização, Satisfação do Cliente.
+                </p>
+
+                <button class="btn-default"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Saiba mais
+                </button>
+
+            </div>
+        </section>
+
+        <section id="carousel-section">
+            <h3 class="title">Nossos Produtos</h3>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 1">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea4.jfif" alt="Imagem 2">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 4">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 5">
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="moledo_stone">
+            <div class="text-and-img">
+                <h3 class="title">
+                    Personalize sua Tábua
+                </h3>
+
+                <img src="public/assets/images/carrossel-4.jfif" alt="Pedra Moledo">
+            </div>
+
+            <div class="informations">
+                <div class="information-item">
+                    <img src="public/assets/images/tabua-de-cortar.png" alt="Icone de Tábua de cortar carne">
+                    <h4 class="sub-title">
+                        Passos a seguir
+                    </h4>
+                    <p class="description">
+                        Crie uma tábua única! Escolha o tipo de madeira, adicione uma gravação personalizada e torne seu
+                        churrasco ainda mais especial. Veja como é fácil personalizar:
+                    </p>
+                </div>
+                <div class="information-item">
+                    <img src="public/assets/images/tabua-de-cortar.png" alt="Icone de Tábua de cortar carne">
+                    <h4 class="sub-title">
+                        Durabilidade e Resistência
+                    </h4>
+                    <p class="description">
+                        1. Escolha seu modelo <br>
+                        2. Adicione a gravação desejada <br>
+                        3. Finalize seu pedido <br>
+                    </p>
+                </div>
+                <div class="information-item">
+                    <img src="public/assets/images/tabua-de-cortar.png" alt="Icone de Tábua de cortar carne">
+                    <h4 class="sub-title">
+                        Aplicações Versáteis
+                    </h4>
+                    <p class="description">
+                        Versátil para paredes internas e externas, lareiras e áreas de lazer. Combina bem com materiais
+                        como madeira e metal, permitindo designs contemporâneos e harmoniosos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="perfect_stone">
+            <div class="texts">
+                <h3 class="title">
+                    Encontre a tábua perfeita para seus churrascos
+                </h3>
+
+                <p class="description">
+                    Confira os outros tipos de Tábuas para churrascos e diversos produtos de madeiras que oferecemos e
+                    escolha a ideal!
+                </p>
+
+                <button class="btn-default"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Saiba mais
+                </button>
+            </div>
+
+            <img src="public/assets/images/capa_card_search.jfif" alt="Parede com a Pedra Moledo e TV">
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="panel">
+                    <div class="hamburger">
+                        <div class="menu_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="panel_img">
+                        <img src="public/assets/images/saiba-mais.jfif" alt="" />
+                    </div>
+
+                    <div class="panel_content">
+                        <div class="panel_top">
+                            <a href="#">Veja todos os nossos produtos</a>
+                        </div>
+                        <div class="panel_top">
+                            <a href="#">Nosso Portifólio</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptas facilis voluptatem
+                            architecto quasi et inventore ab ipsa reprehenderit natus recusandae consectetur eius autem
+                            enim totam, obcaecati repudiandae hic explicabo!</p>
+                        <p>Magni maxime, deserunt omnis. Quisquam officiis quas, soluta, quia ea voluptate aspernatur
+                            laboriosam rem tenetur dolorem delectus praesentium. Blanditiis illo praesentium ad!</p>
+
+
+                        <a href="galerry.html" class="gallery_btn">Ver todos os produtos&#8594;</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="types_stones">
+            <ul id="stones">
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Tábuas para churrasco</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Petisqueiras</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Porta copos</a></li>
+
+                <li class=" stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Relógios Personalizados</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Quadros</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Tábuas para dia a dia</a></li>
+
+                <li class="stone-line"> - </li>
+
+                <li class="stone-item"><a
+                        href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">Porta chaveiros</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <div class="informations">
+                <h3 class="title">
+                    Entre em contato conosco!
+                </h3>
+
+                <p class="description">
+                    Na AWM CNC estamos dispostos a mudar completamento o seu ambiente com a robustez das nossas
+                    pedras naturais.
+                </p>
+
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="01f7152f-1bc5-49a3-8db3-cacff83ee3a5">
+                    <input type="text" name="name" placeholder="Seu nome" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="E-mail" class="contact-inputs" required>
+                    <input type="tel" name="tel" placeholder="Celular" class="contact-inputs" required>
+                    <input type="text" name="message" placeholder="Escreva uma mensagem" class="contact-inputs"
+                        required>
+                    <button class="btn-send" type="submit">ENVIAR</button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer_content">
+        <div class="informations">
+            <div class="menu">
+                <p class="title">
+                    Explore
+                </p>
+
+                <ul id="menu_list">
+                    <li class="menu-item active">
+                        <a href="#home">Início</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="aboutus.html">Sobre Nós</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#gallery">Galeria</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="questions.html">Perguntas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <p class="title">
+                    Fale com a gente
+                </p>
+
+                <a href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                    target="_blank" class="number-tel">
+                    (14) 99836-4625
+                </a>
+
+                <a href="mailto:awm.cnc@outlook.com" target="_blank" class="email">
+                    awm.cnc@outlook.com
+
+                </a>
+
+                <p>Atendimento das 7h às 21hs (dias utéis)</p>
+            </div>
+
+            <div class="media-buttons">
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/cnc.wm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="mailto:awm.cnc@outlook.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="public/assets/images/logo-transparente.svg" alt="Logotipo da AWM CNC">
+
+            <p>&copy; 2024 AWM CNC. Todos os direitos reservados.</p>
+        </div>
+
+        <a href="#home" class="back-top">Voltar ao topo</a>
+    </footer>
+
+    <div class="whatsApp-fixed">
+        <a href="https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+            target="_blank">
+            <img src="public/assets/images/whatsapp-fixed.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>

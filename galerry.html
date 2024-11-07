@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a AWM CNC</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/gelerry.css">
+    <link rel="stylesheet" href="src/styles/aboutus.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/javascript/script.js">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img id="nav_logo" src="public/assets/images/logoprincipal.jfif"
+                    alt="Logotipo da AWM CNC"></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="index.html">INÍCIO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#home">SOBRE NÓS</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#gallery">GALERIA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="questions.html">PERGUNTAS</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"
+                onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                Fale Conosco
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#home">Sobre Nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="questions.html">Perguntas</a>
+                </li>
+
+                <button class="btn-default"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Fale Conosco
+                </button>
+        </div>
+    </header>
+
+    <section class="product-filter">
+        <div class="filter-options">
+            <label for="filter-category">Categoria:</label>
+            <select id="filter-category">
+                <option value="all">Todas</option>
+                <option value="new">Novidades</option>
+                <option value="sale">Promoções</option>
+                <option value="popular">Mais populares</option>
+            </select>
+        </div>
+        <div class="sort-options">
+            <label for="sort-by">Ordenar por:</label>
+            <select id="sort-by">
+                <option value="default">Padrão</option>
+                <option value="price-low-high">Preço: Menor para Maior</option>
+                <option value="price-high-low">Preço: Maior para Menor</option>
+                <option value="name-a-z">Nome: A-Z</option>
+            </select>
+        </div>
+
+        <button class="btn-apply-filters">Aplicar Filtros</button>
+    </section>
+    <section class="products">
+        <div class="product-card">
+            <a style="text-decoration: none;"
+                href="https://api.whatsapp.com/send?text=Estou%20interessado%20neste%20produto%20Winter%20Jacket%20-%20R$120,00"
+                target="_blank">
+                <div class="product-image">
+                    <img src="public/assets/images_product/product-1.jpg" alt="Winter Jacket">
+                </div>
+                <div class="product-info">
+                    <h5>Winter Jacket</h5>
+                    <h6 class="old-price">R$109,90</h6>
+                    <h6 class="current-price">R$79,90</h6>
+                    <h6 class="discount">-27%</h6>
+                    <h6 class="installments">2x de R$39,95 sem juros</h6>
+                </div>
+            </a>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-2.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-3.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-4.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-6.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-3.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-5.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-4.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-5.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-3.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-7.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="public/assets/images_product/product-8.jpg">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>R$120,00</h6>
+            </div>
+        </div>
+        <!-- maiores -->
+
+        <!-- <div class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_1024x1024.jpeg?v=1445623369">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>$99.99</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_1024x1024.jpeg?v=1445623369">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>$99.99</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_1024x1024.jpeg?v=1445623369">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>$99.99</h6>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_1024x1024.jpeg?v=1445623369">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>$99.99</h6>
+            </div>
+        </div> -->
+
+    </section>
+</body>

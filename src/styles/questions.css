@@ -1,0 +1,126 @@
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(55vh + 70px);
+  background-color: var(--color-brown-1);
+}
+
+#cta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 5%;
+}
+
+#cta .cta-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  #home {
+    min-height: calc(40vh + 70px);
+  }
+
+  #cta {
+    margin-top: 7%;
+  }
+
+  #cta .cta-title {
+    width: auto;
+    font-size: 3.2rem;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #home {
+    min-height: calc(25vh + 70px);
+  }
+
+  #cta {
+    margin-top: 17%;
+  }
+
+  #cta .cta-title {
+    width: auto;
+    font-size: 2.2rem;
+    text-align: start;
+  }
+}
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  order: 1;
+  gap: 37px
+}
+
+.faq-container a {
+  text-decoration: none;
+  color: var(--color-brown-1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3%;
+  transition: color 0.5s ease ;
+  transition: font-size 0.5s ease;
+}
+
+.faq-container a:hover {
+  text-decoration: underline;
+}
+
+.faq-item {
+  width: 100%;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+}
+  
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 30px auto;
+}
+
+.faq-question h5 {
+  font-size: 1.30rem;
+  font-weight: 300
+}
+
+@media screen and (max-width: 900px) {
+  .description {
+    font-size: 0.9rem;
+    }
+  }
+  
+.faq-question i {
+  margin-right: 10px;
+}
+  
+.faq-answer {
+  width: 100%;
+  display: none;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.faq-answer p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--color-darkblue-1);
+  line-height: -5px;
+}

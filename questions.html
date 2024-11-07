@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perguntas</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/questions.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img id="nav_logo" src="public/assets/images/logo-transparente.svg"
+                    alt="Logotipo da AWM CNC"></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="index.html">INÍCIO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="aboutus.html">SOBRE NÓS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery">GALERIA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#home">PERGUNTAS</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"
+                onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                Fale Conosco
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="aboutus.html">Sobre Nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#services">Serviços</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#home">Perguntas</a>
+                </li>
+
+                <button class="btn-default"
+                    onclick="window.open('https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                    Fale Conosco
+                </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="cta-title">
+                    Dúvidas?
+                </h1>
+            </div>
+        </section>
+
+        <section id="question_and_answer">
+            <div class="faq-container">
+                <a href="aboutus.html">Sobre a AWM CNC</a>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais são os tipos de pedras que vocês oferecem?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos uma ampla variedade de pedras naturais, incluindo Pedra Moledo, Rock Face,
+                            Travertino, Pedra Madeira, Pedra Mineira, Pedra Goiás, e Seixos. Cada tipo de pedra tem suas
+                            próprias características únicas, adequadas para diferentes aplicações e estilos de design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês fazem projetos personalizados?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, trabalhamos com projetos personalizados para atender às necessidades específicas de cada
+                            cliente. Nosso time de especialistas em design e construção está disponível para ajudá-lo a
+                            selecionar as pedras certas e a criar um projeto que se encaixe perfeitamente no seu espaço.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Como posso obter um orçamento para meu projeto?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para obter um orçamento, entre em contato conosco pelo telefone, WhatsApp ou e-mail. Um de
+                            nossos representantes irá discutir suas necessidades e fornecer uma estimativa detalhada com
+                            base nas especificações do seu projeto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Qual é o prazo de entrega das pedras?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo de entrega varia de acordo com o tipo de pedra e a quantidade solicitada.
+                            Normalmente, o tempo de entrega é de 7 a 14 dias úteis após a confirmação do pedido. Para
+                            prazos específicos, consulte nosso atendimento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem serviço de instalação?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos serviços de instalação realizados por profissionais qualificados. Garantimos
+                            que a instalação será feita com a máxima qualidade e atenção aos detalhes para assegurar a
+                            durabilidade e a estética do projeto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>As pedras são resistentes a condições climáticas extremas?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nossas pedras são naturalmente resistentes a diversas condições climáticas, incluindo
+                            chuva, sol intenso e variações de temperatura. Elas são ideais tanto para uso interno quanto
+                            externo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Qual é a manutenção necessária para as pedras naturais?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A manutenção das pedras naturais é relativamente simples. Recomenda-se a limpeza regular com
+                            água e sabão neutro. Evite o uso de produtos químicos agressivos que possam danificar a
+                            superfície das pedras.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem garantia para as pedras?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos uma garantia de qualidade para todas as nossas pedras. Caso haja algum
+                            defeito de fabricação ou problemas com o material, substituiremos a pedra sem custo
+                            adicional dentro do período de garantia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Vocês oferecem suporte pós-venda?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos suporte pós-venda para garantir a satisfação dos nossos clientes. Nossa
+                            equipe está disponível para responder a quaisquer perguntas que você possa ter após a compra
+                            e para oferecer assistência com manutenção ou reparos, se necessário.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais formas de pagamento vocês aceitam?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos diversas formas de pagamento, incluindo transferência bancária, cartão de crédito e
+                            boleto bancário. Oferecemos também condições especiais de pagamento para projetos maiores.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais são os benefícios de usar pedras naturais na decoração?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>As pedras naturais oferecem durabilidade, beleza atemporal e versatilidade. Elas adicionam um
+                            toque de elegância e sofisticação a qualquer espaço, seja interno ou externo, e são ideais
+                            para diversas aplicações, como pisos, paredes, bancadas e áreas de lazer.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h5>Quais são as características da Pedra Moledo e onde ela pode ser utilizada?</h5>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A Pedra Moledo é conhecida por sua aparência rústica e natural, disponível em diversas cores,
+                            como branco, amarelo e champanhe. Ela é extremamente durável e resistente às intempéries,
+                            tornando-se uma excelente escolha para fachadas, muros, lareiras, áreas de lazer e paredes
+                            internas e externas. Sua versatilidade permite que ela seja utilizada em uma variedade de
+                            projetos, adicionando um toque de elegância e sofisticação a qualquer espaço.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer id="footer_content">
+        <div class="informations">
+            <div class="menu">
+                <p class="title">
+                    Explore
+                </p>
+
+                <ul id="menu_list">
+                    <li class="menu-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="aboutus.html">Sobre Nós</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#gallery">Galeria</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#home">Perguntas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <p class="title">
+                    Fale com a gente
+                </p>
+
+                <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                    target="_blank" class="number-tel">
+                    (14) 99836-4625
+                </a>
+
+                <a href="mailto:awm.cnc@outlook.com" target="_blank" class="email">
+                    awm.cnc@outlook.com
+
+                </a>
+
+                <p>Atendimento das 7h às 21hs (dias utéis)</p>
+            </div>
+
+            <div class="media-buttons">
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/cnc.wm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="mailto:awm.cnc@outlook.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="public/assets/images/logo-transparente.svg" alt="Logotipo da AWM CNC">
+
+            <p>&copy; 2024 AWM CNC. Todos os direitos reservados.</p>
+        </div>
+
+        <a href="#home" class="back-top">Voltar ao topo</a>
+    </footer>
+
+    <div class="whatsApp-fixed">
+        <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+            target="_blank">
+            <img src="public/assets/images/whatsapp-fixed.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
