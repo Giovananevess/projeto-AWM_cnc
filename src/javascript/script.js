@@ -26,6 +26,21 @@ function toggleAnswer(element) {
   }
 }
 
+const currentPage = window.location.pathname;
+
+// Seleciona todos os itens do menu de navegação
+const navItems = document.querySelectorAll("#nav_list .nav-item a");
+
+// Remove a classe 'active' de todos os itens
+navItems.forEach((item) => {
+  item.parentElement.classList.remove("active");
+
+  // Verifica se o href corresponde ao caminho atual e adiciona 'active'
+  if (item.getAttribute("href") === currentPage) {
+    item.parentElement.classList.add("active");
+  }
+});
+
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {

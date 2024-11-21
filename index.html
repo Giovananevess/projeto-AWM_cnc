@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="javascript" href="src/javascript/script.js">
+
 
 
 </head>
@@ -24,29 +26,28 @@
 <body>
     <header>
         <nav id="navbar">
-            <a href="index.html"><img id="nav_logo" src="public/assets/images/WM-02.png" alt="Logotipo da AWM CNC"></a>
+            <a href="index.html">
+                <img id="nav_logo" src="public/assets/images/WM-02.png" alt="Logotipo da AWM CNC">
+            </a>
 
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="#home">INÍCIO</a>
+                    <a href="#home">Início</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="aboutus.html">SOBRE NÓS</a>
+                    <a href="aboutus.html">Sobre Nós</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="galerry.html">GALERIA</a>
+                    <a href="galerry.html">Galeria</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="questions.html">PERGUNTAS</a>
+                    <a href="questions.html">Perguntas</a>
                 </li>
             </ul>
 
-            <button class="btn-default"
+            <button class="btn-contact"
                 onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
-                Fale Conosco
+                <i class="fa-brands fa-whatsapp"></i> Fale Conosco
             </button>
 
             <button id="mobile_btn">
@@ -59,25 +60,24 @@
                 <li class="nav-item">
                     <a href="#home">Início</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="aboutus.html">Sobre Nós</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="galerry.html">Galeria</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="questions.html">Perguntas</a>
                 </li>
+            </ul>
 
-                <button class="btn-default"
-                    onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
-                    Fale Conosco
-                </button>
+            <button class="btn-contact"
+                onclick="window.open('https://api.whatsapp.com/send?phone=5514998364625&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!', '_blank')">
+                <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+            </button>
         </div>
     </header>
+
 
     <main id="content">
         <section id="home">
@@ -161,19 +161,19 @@
                         </div>
                     </div>
                     <div class="carousel-slide">
-                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea4.jfif" alt="Imagem 2">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-4.jfif" alt="Imagem 2">
                         </div>
                     </div>
                     <div class="carousel-slide">
-                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 3">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea1.jfif" alt="Imagem 3">
                         </div>
                     </div>
                     <div class="carousel-slide">
-                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 4">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-5.jfif" alt="Imagem 4">
                         </div>
                     </div>
                     <div class="carousel-slide">
-                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea3.jpg" alt="Imagem 5">
+                        <div class="carousel-image"><img src="public/assets/images/carrossel-idea2.jpg" alt="Imagem 5">
                         </div>
                     </div>
                     <div class="carousel-slide">
@@ -195,7 +195,7 @@
                     Personalize sua Tábua
                 </h3>
 
-                <img src="public/assets/images/carrossel-4.jfif" alt="Pedra Moledo">
+                <img src="public/assets/images/carrossel-idea4.jfif" alt="Pedra Moledo">
             </div>
 
             <div class="informations">
@@ -254,8 +254,8 @@
         </section>
 
         <section>
-            <div class="container">
-                <div class="panel">
+            <div class="modern-container">
+                <div class="modern-panel">
                     <div class="hamburger">
                         <div class="menu_icon">
                             <span></span>
@@ -263,28 +263,25 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="panel_img">
-                        <img src="public/assets/images/saiba-mais.jfif" alt="" />
+
+                    <div class="modern-panel-img">
+                        <img src="public/assets/images/saiba-mais.jfif" alt="Saiba Mais" />
                     </div>
 
-                    <div class="panel_content">
-                        <div class="panel_top">
-                            <a href="#">Veja todos os nossos produtos</a>
-                        </div>
-                        <div class="panel_top">
-                            <a href="#">Nosso Portifólio</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptas facilis voluptatem
-                            architecto quasi et inventore ab ipsa reprehenderit natus recusandae consectetur eius autem
-                            enim totam, obcaecati repudiandae hic explicabo!</p>
-                        <p>Magni maxime, deserunt omnis. Quisquam officiis quas, soluta, quia ea voluptate aspernatur
-                            laboriosam rem tenetur dolorem delectus praesentium. Blanditiis illo praesentium ad!</p>
+                    <div class="modern-panel-content">
+                        <h2>Descubra nossos produtos</h2>
+                        <p>
+                            Conheça a qualidade e sofisticação dos nossos produtos personalizados. Criamos itens únicos
+                            para tornar sua experiência ainda mais especial.
+                        </p>
+                        <p>
+                            Veja nossos projetos incríveis e encontre algo que combina perfeitamente com o seu estilo.
+                        </p>
 
-
-                        <a href="galerry.html" class="gallery_btn">Ver todos os produtos&#8594;</a>
+                        <div class="modern-cta-buttons">
+                            <a href="galerry.html" class="modern-btn">Ver Produtos</a>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -421,7 +418,7 @@
         </div>
 
         <div class="copyright">
-            <img src="public/assets/images/logo-transparente.svg" alt="Logotipo da AWM CNC">
+            <img src="public/assets/images/WM-02.png" alt="Logotipo da AWM CNC">
 
             <p>&copy; 2024 AWM CNC. Todos os direitos reservados.</p>
         </div>
