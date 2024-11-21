@@ -135,3 +135,21 @@ document.querySelector(".btn-apply-filters").addEventListener("click", () => {
     `Filtrando por categoria: ${category} e ordenando por: ${sortBy}`
   );
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Selecione todos os links de produtos
+  const productLinks = document.querySelectorAll(".whatsapp-link");
+
+  productLinks.forEach((link) => {
+    const productName = link.querySelector("h5").innerText;
+    const price = link.querySelector(".current-price").innerText;
+
+    // Monta a mensagem personalizada
+    const message = encodeURIComponent(
+      `Estou interessado neste produto: ${productName} - ${price}`
+    );
+
+    // Atualiza o link do WhatsApp
+    link.href = `https://api.whatsapp.com/send?text=${message}`;
+  });
+});
