@@ -32,7 +32,7 @@ h6,
 .product-info .current-price,
 .product-info .discount {
   font-weight: bold;
-  color: #ff0000;
+  color: #e20a03;
 }
 
 .product-info .installments {
@@ -50,7 +50,7 @@ h6,
 
 /* Product Filter Layout */
 .product-filter {
-  margin-top: 24px;
+  margin-top: 43px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,10 +128,11 @@ h6,
 }
 
 .product-card {
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 20%;
+  flex: 1 1 calc(20% - 15px);
   padding: 15px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -140,17 +141,19 @@ h6,
 
 .product-image {
   display: flex;
-  height: 200px;
+  height: 200px; /* Altura fixa para o container das imagens */
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden; /* Esconde partes da imagem que excedem o container */
   align-items: center;
-  width: 100%;
+  width: 100%; /* Largura fixa do container */
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Mostra a imagem inteira com possíveis espaços vazios */
+  background-color: #ffffff; /* Fundo para áreas vazias */
+  border-radius: 20px !important;
 }
 
 /* Responsive Adjustments */
