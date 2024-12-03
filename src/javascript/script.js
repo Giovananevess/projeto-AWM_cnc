@@ -611,25 +611,27 @@ const products = [
 ];
 
 const productsContainer = document.querySelector(".products");
+
 function generateProducts(products) {
   const productsContainer = document.querySelector(".products");
   productsContainer.innerHTML = ""; // Limpa o container para filtros
   const sellerPhoneNumber = "5514998364625"; // Número do vendedor com DDI e DDD
 
   products.forEach((product) => {
-    const whatsappMessage = `Olá, tudo bem? Estou interessado no produto ${
+    // Gera o link dinâmico para WhatsApp com o número do vendedor e a mensagem personalizada
+    const whatsappMessage = `Olá, tudo bem?
+    Estou interessado no seguinte produto que vi no site: ${
       product.name
     } - R$${product.price.toFixed(2)}. Poderia me passar mais informações?`;
     const whatsappLink = `https://api.whatsapp.com/send?phone=${sellerPhoneNumber}&text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
-    // Cria o card do produto
     const productCard = `
           <div class="product-card" data-category="${
             product.category
           }" data-price="${product.price}" data-name="${product.name}">
-              <a style="text-decoration: none;" href="${whatsappLink}" target="_blank">
+              <a style="text-decoration: none;" href="#" onclick="window.open('${whatsappLink}', '_blank')">
                   <div class="product-image">
                       <img src="${product.image}" alt="${product.name}">
                   </div>
@@ -647,6 +649,7 @@ function generateProducts(products) {
     productsContainer.insertAdjacentHTML("beforeend", productCard);
   });
 }
+// Chama a função para gerar os produtos
 generateProducts(products);
 
 // function showSlide(index) {
