@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Produtos</title>
+    <link rel="icon" type="image/x-icon" href="public/assets/images/favicon.ico">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -49,6 +50,23 @@
         </div>
     </header>
 
+    <section id="how-it-works-filter">
+        <div class="info-container">
+            <h2>Como Funciona?</h2>
+            <p>
+                <strong>Gostou de um produto?</strong> É simples! Basta clicar no produto e você será redirecionado ao
+                nosso <span class="highlight">WhatsApp</span>.
+            </p>
+            <p>
+                Lá, você poderá personalizar seu pedido, escolher detalhes como <span class="highlight">nome,
+                    tamanho</span> e muito mais! Tudo do seu jeito. 💬
+            </p>
+            <p>
+                Após a confirmação, preparamos o produto com todo carinho e enviamos para você! 🚚✨
+            </p>
+        </div>
+    </section>
+
     <section class="product-filter">
         <div class="filter-options">
             <label for="filter-category">Categoria:</label>
@@ -75,7 +93,87 @@
         Filtrando produtos, aguarde...
     </div>
 
+
     <section class="products"></section>
 
+    <footer id="footer_content">
+        <div class="informations">
+            <div class="menu">
+                <p class="title">
+                    Explore
+                </p>
 
+                <ul id="menu_list">
+                    <li class="menu-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#home">Sobre Nós</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#gallery">Galeria</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="questions.html">Perguntas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <p class="title">
+                    Fale com a gente
+                </p>
+
+                <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                    target="_blank" class="number-tel">
+                    (14) 99836-4625
+                </a>
+
+                <a href="mailto:awm.cnc@outlook.com
+                " target="_blank" class="email">
+                    awm.cnc@outlook.com
+
+                </a>
+
+                <p>Atendimento das 7h às 21hs (dias utéis)</p>
+            </div>
+
+            <div class="media-buttons">
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/cnc.wm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="mailto:awm.cnc@outlook.com
+                    " target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="public/assets/images/WM-02.png" alt="Logotipo da AWM CNC">
+
+            <p>&copy; 2024 AWM CNC. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsApp-fixed">
+        <a href="https://api.whatsapp.com/send?phone=5511950697643&text=Olá,%20tudo%20bem?%20Vim%20através%20do%20site.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20serviços!"
+            target="_blank">
+            <img src="public/assets/images/whatsapp-fixed.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
 </body>

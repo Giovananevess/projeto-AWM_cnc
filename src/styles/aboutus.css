@@ -1,109 +1,109 @@
 #home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: calc(100vh + 70px);
-    background: url('../../public/assets/images/capa-aboutus.jfif') no-repeat center center;
-    background-size: cover;
-    margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh + 70px);
+  background: url("../../public/assets/images/capa-aboutus.jfif") no-repeat
+    center center;
+  background-size: cover;
+  margin-top: 0;
 }
 
 #cta {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
 }
 
 #cta .cta-title {
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 4rem;
-    color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #ffffff;
 }
 
 #cta .cta-description {
-    width: 45%;
-    font-family: "Lora", sans-serif; 
-    font-size: 1.20rem;
-    color: #000000;
-    font-weight: 300;
-    margin-top: 4%;
-    letter-spacing: 0.5px;
+  width: 45%;
+  font-family: "Lora", sans-serif;
+  font-size: 1.2rem;
+  color: #e6e6e6;
+  font-weight: 300;
+  margin-top: 4%;
+  letter-spacing: 0.5px;
 }
 
-
 @media screen and (max-width: 850px) {
-    #cta .cta-title {
-        font-size: 3.2rem;
-        margin-top: 5%;
-    }
+  #cta .cta-title {
+    font-size: 3.2rem;
+    margin-top: 5%;
+  }
 
-    #cta .cta-description {
-        width: 100%;
-        margin-top: 5%;
-        font-size: 1.25rem;
-        text-align: start;
-    }
+  #cta .cta-description {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1.25rem;
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    #cta .cta-title {
-        width: auto;
-        font-size: 2.2rem;
-        text-align: start;
-        margin-top: 15%;
-    }
+  #cta .cta-title {
+    width: auto;
+    font-size: 2.2rem;
+    text-align: start;
+    margin-top: 15%;
+  }
 
-    #cta .cta-description {
-        width: auto;
-        margin-top: 5%;
-        font-weight: 300;
-        font-size: 1.05rem;
-        text-align: start;
-    }
+  #cta .cta-description {
+    width: auto;
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 1.05rem;
+    text-align: start;
+  }
 }
 
-
 #relevance_data img {
-    width: 9%;
-    height: auto;
+  width: 9%;
+  height: auto;
 }
 
 #relevance_data .informations {
-    width: 100%;
-    margin-top: 6%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#relevance_data .informations-left, .informations-right {
-    width: 43%;
-    display: flex;
-    flex-direction: column;
-    gap: 37px;
+#relevance_data .informations-left,
+.informations-right {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
 }
-
 
 #relevance_data .title {
-    width: 90%; 
+  width: 90%;
 }
 
 @media screen and (max-width: 800px) {
-    #relevance_data img {
-        width: 8%;
-    }
+  #relevance_data img {
+    width: 8%;
+  }
 
-    #relevance_data .informations {
-        flex-direction: column;
-        gap: 37px;
-    }
+  #relevance_data .informations {
+    flex-direction: column;
+    gap: 37px;
+  }
 
-    #relevance_data .informations-left, .informations-right {
-        width: auto;
-    }
+  #relevance_data .informations-left,
+  .informations-right {
+    width: auto;
+  }
 }
